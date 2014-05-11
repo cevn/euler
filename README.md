@@ -1,5 +1,4 @@
 # Euler
---- 
 
 This is a collection of programs to solve Project Euler problems.
 
