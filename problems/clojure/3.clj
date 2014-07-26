@@ -2,5 +2,12 @@
 ; The prime factors of 13195 are 5, 7, 13 and 29.
 ; What is the largest prime factor of the number 600851475143?
 
-(defn prime [n]
-  )
+
+(defn factor [num cur]
+    (if (= num cur)
+        num
+        (if (zero? (mod num cur))
+              (factor (/ num cur) cur)
+              (factor num (inc cur)))))
+
+(factor 600851475143 2)
